@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="only light">
 <title>Protótipo Plataforma Investimentos</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,7 @@
    PICTURE: the working app itself; the wallet calculator result drawn large.
    COLOUR and TYPE: mahogany/oxblood primary, brass accent, warm off-white; Fraunces + Inter Tight + Inter.
    LAYOUT: sidebar on desktop, bottom nav on phone; one calm column per screen. */
-:root{color-scheme:light dark;
+:root{color-scheme:light only;
 --bg:light-dark(#f7f3ef,#140c0a);--card:light-dark(#ffffff,#1e1411);--ink:light-dark(#1f1512,#f2e9e4);--mute:light-dark(#7a6a63,#b3a199);
 --line:light-dark(#e8ddd5,#3a2a25);--soft:light-dark(#f3ebe5,#2a1c18);
 --primary:light-dark(#4a1d17,#5a241c);--primary-2:light-dark(#6b2a20,#d08a72);--primary-deep:light-dark(#2b0f0b,#0e0706);
@@ -22,7 +23,7 @@
 --figure:light-dark(#4a1d17,#d08a72);
 --g:var(--primary);--g2:var(--primary-2);--lime:var(--accent-soft);--coral:var(--warn);
 --shadow:0 1px 2px rgba(43,15,11,.04),0 8px 24px rgba(43,15,11,.06);--shadow-warm:0 20px 50px rgba(43,15,11,.18)}
-:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+:root,:root[data-theme=light],:root[data-theme=dark]{color-scheme:light only}
 *{box-sizing:border-box;min-width:0}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif;overflow-x:clip}
 h1,h2,h3{line-height:1.1;margin:0 0 8px;text-wrap:balance;letter-spacing:-.01em}
